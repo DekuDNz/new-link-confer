@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+header .container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+header .container .header-list li {
+  display: inline-block;
+  margin-right: 50px;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+header .container .header-list .pages-list {
+  position: relative;
+  cursor: pointer;
+}
+header .container .header-list .pages-list .pages-list-child {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all linear 0.1s;
+}
+header .container .header-list .pages-list .pages-list-child li {
+  width: 100%;
+  margin-top: 20px;
+}
+header .container .header-list .pages-list .pages-list-child li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+header .container .header-list .pages-list .fa {
+  margin-left: 10px;
+  color: #df42b1;
+}
+header .container .header-ticket {
+  font-size: 15px;
+  padding: 20px 40px;
+  border-radius: 40px;
+  color: white;
+  background: #df42b1;
+  background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+  border: none;
+}
+header .container .header-ticket .fa {
+  margin-left: 10px;
+}
+
+header .container .header-list > li:first-child {
+  color: #df42b1;
+}
+
+header .container .header-list .pages-list:hover .pages-list-child {
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0px);
+}
+
+header .container .header-list .pages-list:hover {
+  color: #df42b1;
+}
+
+header .container .header-list .pages-list .pages-list-child li a:hover {
+  color: #df42b1;
+}
+
+header .container .header-ticket:hover {
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  color: #1abc9c;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #111343 !important;
+  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}/*# sourceMappingURL=style.css.map */
